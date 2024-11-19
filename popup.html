@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation and Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Motivational Quote Section -->
+    <div id="motivationalQuote"></div>
+
+    <!-- Timer and Progress Bar -->
+    <div id="timerDisplay">0:00</div>
+    <div id="progressBar"></div>
+
+    <!-- Session Controls -->
+    <button id="startSession">Start Session</button>
+    <button id="resetSession">Reset Session</button>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+
+    <!-- YouTube Search Section -->
+    <input type="text" id="searchQuery" placeholder="Search YouTube">
+    <button id="searchButton">Search</button>
+    <div id="videoList"></div>
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div class="video-player-wrapper">
+                <iframe id="videoPlayer" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div id="searchHistory" class="search-history"></div>
+    <button id="loadMore" style="display: none;">Load More</button>
+    
+
+    <script src="popup.js"></script>
+</body>
+</html>
